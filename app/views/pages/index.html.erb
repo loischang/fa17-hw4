@@ -1,0 +1,20 @@
+<h1>Index</h1>
+
+<% @cats.each do |cat|%>
+    <div>Name: <%= cat.name %> </div>
+<% end %>
+<br>
+
+<% @todos.each do |todo|%>
+    <div>Task: <%= todo.tasks %> </div>
+    <div>Finished: <%= todo.finished %></div>
+<% end %>
+<br>
+<%=link_to "Create Todo", new_todo_path %>
+<br>
+
+<% @users.each do |user|%>
+    <div>Username: <%= user.username %> </div>
+    <div>Email: <%= user.email %></div>
+    <div>Age: <%= user.age %></div>
+<% end %>
